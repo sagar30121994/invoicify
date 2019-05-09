@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "259961082161",
+    "firebase_url": "https://invoicify-e21a8.firebaseio.com",
+    "project_id": "invoicify-e21a8",
+    "storage_bucket": "invoicify-e21a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259961082161:android:cbd06bf4cd92842b",
+        "android_client_info": {
+          "package_name": "com.invoicify.invoicify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259961082161-bq1p47qaihn54i0ma1r41i0aseo1b8t5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.invoicify.invoicify",
+            "certificate_hash": "06bdc85a8d6c04fe5b41f4174ff3e4182b2e8c23"
+          }
+        },
+        {
+          "client_id": "259961082161-8upd7gmm984rdtn5b9mjtgr60gho9ln6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_YAiWx8oCApPicli_PG88nou9HcONZzQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259961082161-8upd7gmm984rdtn5b9mjtgr60gho9ln6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

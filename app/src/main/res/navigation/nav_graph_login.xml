@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.invoicify.invoicify.view.auth.fragment.LoginFragment"
+        android:label="fragment_blank_fragment3"
+        tools:layout="@layout/fragment_blank_fragment3">
+        <action
+            android:id="@+id/nav_bussiness_details"
+            app:destination="@id/bussiness_Details"
+            app:enterAnim="@anim/fade_in" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/bussiness_Details"
+        android:name="com.invoicify.invoicify.view.bussinessdetails.fragment.Bussiness_Details"
+        android:label="fragment_bussiness__details"
+        tools:layout="@layout/fragment_bussiness__details">
+
+
+    </fragment>
+</navigation>

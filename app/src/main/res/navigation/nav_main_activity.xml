@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_activity"
+    app:startDestination="@id/blankFragment2">
+
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.invoicify.invoicify.fragment.BlankFragment2"
+        android:label="fragment_blank_fragment2"
+        tools:layout="@layout/fragment_blank_fragment2" />
+    <fragment
+        android:id="@+id/client_Details"
+        android:name="com.invoicify.invoicify.fragment.Client_Details"
+        android:label="fragment_client__details"
+        tools:layout="@layout/fragment_client__details" />
+    <fragment
+        android:id="@+id/cust_Details"
+        android:name="com.invoicify.invoicify.fragment.Cust_Details"
+        android:label="fragment_cust__details"
+        tools:layout="@layout/fragment_cust__details" />
+    <fragment
+        android:id="@+id/order_Product_Info"
+        android:name="com.invoicify.invoicify.fragment.Order_Product_Info"
+        android:label="Order_Product_Info" />
+</navigation>

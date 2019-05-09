@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Invoicify</string>
+
+
+    <!--Help Texts-->
+
+    <string name="invoicify_help_tell_us_about_yourself">Tell us about yourself.</string>
+
+
+    <!-- hints -->
+    <string name="invoicify_hint_company_name">Orgnization Name</string>
+    <string name="invoicify_hint_GSTN">GSTN</string>
+    <string name="invoicify_hint_establish_Date">Establish Date</string>
+    <string name="invoicify_hint_Address_1">Address Line 1</string>
+    <string name="invoicify_hint_Address_2">Address Line 2</string>
+    <string name="invoicify_hint_state">State</string>
+    <string name="invoicify_hint_city">City</string>
+    <string name="invoicify_hint_pin_code">Pin Code</string>
+    <string name="invoicify_hint_contry">Contry</string>
+    <string name="invoicify_hint_contact_no">Contact No</string>
+    <string name="invoicify_hint_email">Business Email</string>
+
+
+    <string name="invoicify_hint_personal_name">Name</string>
+    <string name="invoicify_hint_personal_email_id">Email</string>
+    <string name="invoicify_hint_personal_phone_number">Mobile</string>
+    <string name="invoicify_hint_personal_date_of_birth">Date of Birth</string>
+
+
+    <string name="invoicify_hint_item_name">Item Name/Description</string>
+    <string name="invoicify_hint_stock">Available Stock</string>
+    <string name="invoicify_hint_cost">Unit Cost</string>
+    <string name="invoicify_hint_unit_type">Unit Type</string>
+    <string name="invoicify_hint_hsn">HSN</string>
+    <string name="invoicify_hint_sgst">SGST</string>
+    <string name="invoicify_hint_CGST">CGST</string>
+    <string name="invoicify_hint_IGST">IGST</string>
+
+
+    <string name="invoicify_hint_name">Name</string>
+    <string name="invoicify_hint_personal_email">Personal Email</string>
+    <string name="invoicify_hint_mobile">Mobile</string>
+    <string name="invoicify_hint_password">Password</string>
+    <string name="invoicify_hint_confirm_password">Confirm Password</string>
+
+
+    <string name="invoicify_hint_ifsc">IFSC</string>
+    <string name="invoicify_hint_bank">Bank Name</string>
+    <string name="invoicify_hint_branch">Branch</string>
+    <string name="invoicify_hint_account_no">Account No</string>
+    <string name="invoicify_hint_holdersname">Honlders Name</string>
+
+
+    <string name="invoicify_hint_invoice_no">Invoice No</string>
+    <string name="invoicify_hint_date">Date</string>
+    <string name="invoicify_hint_due_date">Due Date</string>
+    <string name="invoicify_hint_invoice_no_formate">#INV</string>
+
+
+    <!--Button Text-->
+    <string name="invoicify_btn_submit">Submit</string>
+    <string name="invoicify_btn_cleare">Clear</string>
+    <string name="invoicify_btn_save">Save</string>
+    <string name="invoicify_btn_next">Next</string>
+    <string name="invoicify_btn_add">Add</string>
+
+    <string name="shr_error_password">Password must contain at least 8 characters.</string>
+    <string name="shr_filter_title">Filter</string>
+    <string name="shr_search_title">Search</string>
+    <string name="shr_product_title">Title</string>
+    <string name="shr_product_description">Secondary text</string>
+
+    <!-- Shrine backdrop menu labels -->
+    <string name="shr_featured_label">Featured</string>
+    <string name="shr_apartment_label">Apartment</string>
+    <string name="shr_accessories_label">Accessories</string>
+    <string name="shr_shoes_label">Shoes</string>
+    <string name="shr_tops_label">Tops</string>
+    <string name="shr_bottoms_label">Bottoms</string>
+    <string name="shr_dresses_label">Dresses</string>
+    <string name="shr_account_label">My Account</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Home</string>
+    <string name="title_home">Invoices</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Profile</string>
+
+
+    <string name="title_inventory">Inventory</string>
+    <string name="title_customers">Customers</string>
+    <string name="title_supliers">Supliers</string>
+    <string name="title_products">Product</string>
+
+    <!-- checkbox texts -->
+    <string name="check_tax_inclusive">Tax Inclusive Price</string>
+    <string name="title_activity_product__list">Product_List</string>
+    <string name="title_activity_invoice__history">Invoice_History</string>
+
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_master">Master</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="analytics_fragment">analytics_fragment</string>
+    <string name="total_revenue_fragment">total_revenue_fragment</string>
+    <string name="new_invoice_fragment">new_invoice_fragment</string>
+    <string name="add_client_fragment">add_client_fragment</string>
+    <string name="add_item_fragment">add_item_fragment</string>
+    <string name="add_custmers_fragment">add_custmers_fragment</string>
+    =======
+    >>>>>>> feature/V1.0.0
+
+
+</resources>

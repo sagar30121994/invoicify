@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.invoicify.invoicify"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.version
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':data')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation("androidx.appcompat:appcompat:$app_compat_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("com.google.android.material:material:$material_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("androidx.constraintlayout:constraintlayout:$constraint_layout_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+
+    }
+    implementation("com.google.firebase:firebase-core:$firebase_core_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("com.google.firebase:firebase-firestore:$firebase_firestore_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+    implementation("com.airbnb.android:lottie:$lottie_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+
+    implementation "com.github.PhilJay:MPAndroidChart:$mpchart_version"
+
+
+    implementation("com.google.firebase:firebase-auth:$firebase_auth_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("com.google.android.gms:play-services-auth:$google_gms_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    implementation("com.firebaseui:firebase-ui-auth:$firebase_ui_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+    implementation("com.crashlytics.sdk.android:crashlytics:$firebase_crashalitics_version") {
+        transitive = true
+    }
+
+
+    implementation("androidx.lifecycle:lifecycle-extensions:$lifecycle_extensions_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+    // RxJava
+    implementation("io.reactivex.rxjava2:rxjava:$rxjava_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+
+    }
+
+    // RxAndroid
+    implementation("io.reactivex.rxjava2:rxandroid:$rxandroid_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+
+    }
+
+    // Dagger
+    implementation("com.google.dagger:dagger:$dagger_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+
+    }
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    def nav_version = "2.1.0-alpha01"
+
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    } // For Kotlin use navigation-fragment-ktx
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version") {
+        exclude group: "com.google.guava", module: "listenablefuture"
+    }
+
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://maven.fabric.io/public' }
+}

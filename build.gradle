@@ -1,0 +1,84 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.21'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha01"
+        classpath 'io.fabric.tools:gradle:1.+'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+    }
+}
+
+ext {
+    minSdkVersion = 21
+    compileSdkVersion = 28
+    targetSdkVersion = 28
+    version ="1.0"
+    versionCode=1
+
+    // Support
+    app_compat_version = '1.1.0-alpha03'
+    support_v4_version = '1.0.0'
+    support_media_version = '1.0.0'
+    constraint_layout_version = '1.1.3'
+    material_version = '1.1.0-alpha04'
+    recyclerview_version = '1.0.0'
+    lifecycle_extensions_version = '2.0.0'
+    google_gms_version="16.0.1"
+
+
+
+    // RxJava
+    rxjava_version = '2.2.2'
+
+    // RxAndroid
+    rxandroid_version = '2.1.0'
+
+    // Dagger
+    dagger_version = '2.17'
+
+    // Firebase
+    firebase_firestore_version = '17.1.0'
+    firebase_core_version = '16.0.8'
+    firebase_auth_version = '16.2.1'
+    firebase_ui_version = '4.3.2'
+    firebase_crashalitics_version = '2.9.9@aar'
+
+    //lottie
+    lottie_version="3.0.0"
+
+    //architecture
+    nav_version = "2.1.0-alpha01"
+
+    //MpChart
+   mpchart_version= "v2.2.4"
+
+    // Test
+    junit_version = '4.12'
+    runner_version = '1.1.0-alpha4'
+    espress_core_version = '3.1.0-alpha4'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

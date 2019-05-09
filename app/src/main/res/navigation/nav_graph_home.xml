@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/analysis">
+
+    <fragment
+        android:id="@+id/totalRevenue"
+        android:name="com.invoicify.invoicify.view.totalrevenu.fragment.TotalRevenue"
+        android:label="fragment_total_revenue"
+        tools:layout="@layout/fragment_total_revenue">
+
+        <action
+            android:id="@+id/action_load_invoice"
+            app:destination="@id/new_invoice" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/analysis"
+        android:name="com.invoicify.invoicify.view.analysis.fragment.Analysis"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_analysis">
+        <action
+            android:id="@+id/action_total_revenue"
+            app:destination="@id/totalRevenue" />
+
+        <action
+            android:id="@+id/action_load_new_invoice"
+            app:destination="@id/new_invoice" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/new_invoice"
+        android:name="com.invoicify.invoicify.view.invoice.fragment.NewInvoiceFragment"
+        android:label="fragment_blank_fragment2"
+        tools:layout="@layout/fragment_newinvoice">
+
+        <action
+            android:id="@+id/action_new_client"
+            app:destination="@id/client_Details" />
+        <action
+            android:id="@+id/action_new_item"
+            app:destination="@id/order_Product_Info"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_Details"
+        android:name="com.invoicify.invoicify.view.clientdetails.fragment.Client_Details"
+        android:label="fragment_client__details"
+        tools:layout="@layout/fragment_client__details">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/order_Product_Info"
+        android:name="com.invoicify.invoicify.view.orderproduct.fragment.Order_Product_Info"
+        android:label="Order_Product_Info"></fragment>
+
+    <!--<fragment-->
+    <!--android:id="@+id/blankFragment"-->
+    <!--android:name="com.invoicify.invoicify.fragment.BlankFragment"-->
+    <!--android:label="fragment_blank"-->
+    <!--tools:layout="@layout/fragment_blank" />-->
+
+</navigation>

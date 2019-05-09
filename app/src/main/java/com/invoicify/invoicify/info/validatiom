@@ -1,0 +1,12 @@
+
+
+********Validation.txt*********
+
+this file is for the details used in tha validation
+
+validation mainly done in ViewModels and we have used Observer to return the result so following are some pre -defined Int value
+to understand the result
+
+91  = null data model
+item_index(1-no of present fields in model)= null field
+99=successful validation

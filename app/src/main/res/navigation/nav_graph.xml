@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/bussiness_Details">
+
+    <fragment
+        android:id="@+id/bussiness_Details"
+        android:name="com.invoicify.invoicify.fragment.Bussiness_Details"
+        android:label="fragment_bussiness__details"
+        tools:layout="@layout/fragment_bussiness__details">
+        <action
+            android:id="@+id/action_analysis"
+            app:destination="@id/blankFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment3"
+        android:name="com.invoicify.invoicify.fragment.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank">
+        <action
+            android:id="@+id/action_add_invoice"
+            app:destination="@id/blankFragment22" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment22"
+        android:name="com.invoicify.invoicify.fragment.BlankFragment2"
+        android:label="fragment_blank_fragment2"
+        tools:layout="@layout/fragment_blank_fragment2">
+        <action
+            android:id="@+id/action_add_client"
+            app:destination="@id/client_Details2" />
+        <action
+            android:id="@+id/action_add_custmer"
+            app:destination="@id/cust_Details2" />
+
+        <action
+            android:id="@+id/action_add_item"
+            app:destination="@id/order_Product_Info2" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/client_Details2"
+        android:name="com.invoicify.invoicify.fragment.Client_Details"
+        android:label="fragment_client__details"
+        tools:layout="@layout/fragment_client__details" />
+
+    <fragment
+        android:id="@+id/cust_Details2"
+        android:name="com.invoicify.invoicify.fragment.Cust_Details"
+        android:label="fragment_cust__details"
+        tools:layout="@layout/fragment_cust__details" />
+
+    <fragment
+        android:id="@+id/order_Product_Info2"
+        android:name="com.invoicify.invoicify.fragment.Order_Product_Info"
+        android:label="Order_Product_Info" />
+
+
+</navigation>
